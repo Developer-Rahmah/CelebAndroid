@@ -1,0 +1,248 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_behavior="com.celebritiescart.celebritiescart.customs.AppBarFlingScrollBehavior"
+        >
+
+        <FrameLayout
+            app:layout_scrollFlags="scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/banner_height" >
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/banner_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        custom:indicator_visibility="visible"
+                        custom:auto_cycle="true" >
+
+                        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/slider_celebrity_text_height"
+                            android:layout_alignParentBottom="true"
+
+                            >
+
+                            <ImageView
+                                style="@style/BackGroundImageViewCelebrity"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.5"
+                                android:adjustViewBounds="false"
+                                android:cropToPadding="false" />
+
+                            <TextView
+                                android:id="@+id/celebritySliderName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+
+                                android:maxLines="1"
+
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="2"
+                                android:text="Nisreen Tafesh"
+                                android:textAlignment="center"
+                                android:paddingBottom="10px"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="32sp"
+                                android:textStyle="bold" />
+                        </FrameLayout>
+
+
+
+                    </com.daimajia.slider.library.SliderLayout>
+
+                    <com.daimajia.slider.library.Indicators.PagerIndicator
+                        android:id="@+id/banner_slider_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:selected_color="@color/colorPrimary"
+                        app:unselected_color="@color/windowBackground"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        style="@style/AndroidImageSlider_Indicator" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <com.celebritiescart.celebritiescart.helpers.CustomTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:tabIndicatorHeight="2dp"
+            app:tabBackground="@color/white"
+            android:background="@color/white"
+            app:tabTextColor="@color/colorPrimary"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            style="@style/MyCustomTabLayout" />
+
+    </android.support.design.widget.AppBarLayout>-->
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <FrameLayout
+                    android:id="@+id/frm_image"
+                    app:layout_scrollFlags="scroll"
+                    android:layout_width="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/banner_height" >
+
+                            <com.daimajia.slider.library.SliderLayout
+                                android:id="@+id/banner_slider"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                custom:indicator_visibility="visible"
+                                android:layout_marginBottom="-120dp"
+                                custom:auto_cycle="true" >
+
+                                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="@dimen/slider_celebrity_text_height"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="120dp"
+
+                                    >
+
+                                    <ImageView
+                                        style="@style/BackGroundImageViewCelebrity"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:alpha="0.5"
+                                        android:adjustViewBounds="false"
+                                        android:cropToPadding="false" />
+
+                                    <TextView
+                                        android:id="@+id/celebritySliderName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+
+                                        android:maxLines="1"
+
+                                        android:shadowColor="@color/black"
+                                        android:shadowDx="1"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="2"
+                                        android:text="Nisreen Tafesh"
+                                        android:textAlignment="center"
+                                        android:paddingBottom="10px"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:textSize="32sp"
+                                        android:textStyle="bold" />
+                                </FrameLayout>
+
+
+
+                            </com.daimajia.slider.library.SliderLayout>
+
+                            <com.daimajia.slider.library.Indicators.PagerIndicator
+                                android:id="@+id/banner_slider_indicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:selected_color="@color/colorPrimary"
+                                app:unselected_color="@color/windowBackground"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="5dp"
+                                style="@style/AndroidImageSlider_Indicator" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <com.celebritiescart.celebritiescart.helpers.CustomTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:tabIndicatorHeight="2dp"
+            app:tabBackground="@color/white"
+            android:background="@color/white"
+            app:tabTextColor="@color/colorPrimary"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            style="@style/MyCustomTabLayout" />
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

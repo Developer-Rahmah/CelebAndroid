@@ -1,0 +1,83 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/parentScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:paddingTop="50dp"
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/snapChat"
+                android:layout_width="186dp"
+                android:layout_height="273dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/snapchat" />
+
+            <LinearLayout
+                android:id="@+id/socialLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/snapChat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/fb"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:src="@drawable/facebook"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="centerInside"
+                    />
+
+                <ImageView
+                    android:id="@+id/tw"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:scaleType="centerInside"
+
+                    android:src="@drawable/twitter"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/insta"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/instagram"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

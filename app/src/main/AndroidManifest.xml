@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.celebritiescart.celebritiescart">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+
+        android:name="com.celebritiescart.celebritiescart.app.App"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup"
+        android:networkSecurityConfig="@xml/network_security_config"
+
+        tools:targetApi="m">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCpCkaCIr_DNsSmREA6W_uF59gKMJ8LCQM" />
+
+        <activity
+            android:name="com.celebritiescart.celebritiescart.activities.SplashScreen"
+            android:screenOrientation="portrait"
+          >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.celebritiescart.celebritiescart.activities.IntroScreen" />
+        <activity
+            android:name="com.celebritiescart.celebritiescart.activities.MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:launchMode="singleTask">
+
+            <intent-filter>
+                <data android:scheme="@string/custom_ui_callback_scheme"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.celebritiescart.celebritiescart.activities.Login"
+            android:label=".activities.Login"
+
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.celebritiescart.celebritiescart.activities.Signup"
+            android:label=".activities.Signup"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Facebook Activity -->
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.celebritiescart.celebritiescart.activities.FaqActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <!-- Braintree Activity -->
+
+        <!--<activity-->
+            <!--android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"-->
+            <!--android:launchMode="singleTask">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+
+                <!--<data android:scheme="${applicationId}.braintree" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!-- Scheduled Notifications -->
+
+        <receiver
+            android:name="com.celebritiescart.celebritiescart.receivers.AlarmReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_MARKET" />
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Firebase Notifications -->
+
+        <service android:name="com.celebritiescart.celebritiescart.services.MyFirebaseMessagingService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.celebritiescart.celebritiescart.services.MyFirebaseInstanceIDService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.oppwa.mobile.connect.service.ConnectService"
+            android:exported="false"/>
+
+        <activity
+            tools:replace="android:theme"
+
+            android:name="com.oppwa.mobile.connect.checkout.dialog.CheckoutActivity"
+            android:theme="@style/Theme.Checkout.Light"
+
+            android:exported="false"
+            android:launchMode="singleTop"/>
+        <receiver
+            android:name="com.celebritiescart.celebritiescart.receivers.CheckoutBroadcastReceiver"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+    </application>
+
+</manifest>

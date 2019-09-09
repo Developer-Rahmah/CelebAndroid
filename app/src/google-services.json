@@ -1,0 +1,148 @@
+{
+  "project_info": {
+    "project_number": "966390224795",
+    "firebase_url": "https://qiotic-ecommerce.firebaseio.com",
+    "project_id": "qiotic-ecommerce",
+    "storage_bucket": "qiotic-ecommerce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966390224795:android:56c6f566458b17b8",
+        "android_client_info": {
+          "package_name": "com.dot.androidecommerce.demo2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966390224795-qvoe1c8parhahf713cduthcrn1aranj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpCkaCIr_DNsSmREA6W_uF59gKMJ8LCQM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966390224795:android:f26b596e4bf95854",
+        "android_client_info": {
+          "package_name": "com.dot.androidecommerce.qiotic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966390224795-qvoe1c8parhahf713cduthcrn1aranj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpCkaCIr_DNsSmREA6W_uF59gKMJ8LCQM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966390224795:android:a710304fd300523c",
+        "android_client_info": {
+          "package_name": "com.celebritiescart.celebritiescart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966390224795-qvoe1c8parhahf713cduthcrn1aranj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpCkaCIr_DNsSmREA6W_uF59gKMJ8LCQM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966390224795:android:0ec78fa5b15d730a",
+        "android_client_info": {
+          "package_name": "com.celebritiescart.celebritiescart.free"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966390224795-haofjk59qn39diovg9j99omtot7qt23b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.celebritiescart.celebritiescart.free",
+            "certificate_hash": "1420fb1fb078ab7bd2e44dd0c9c4f42e92829e00"
+          }
+        },
+        {
+          "client_id": "966390224795-qvoe1c8parhahf713cduthcrn1aranj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpCkaCIr_DNsSmREA6W_uF59gKMJ8LCQM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966390224795-qvoe1c8parhahf713cduthcrn1aranj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

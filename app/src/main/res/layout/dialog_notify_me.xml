@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_round_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_black"
+            android:layout_marginEnd="@dimen/address_form_button_marginTop"
+            android:layout_marginStart="@dimen/address_form_button_marginTop"
+            android:layout_marginTop="@dimen/address_form_button_marginTop"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_android"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/address_form_button_marginTop"
+
+                />
+
+        <EditText
+            android:id="@+id/et_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/txt_validation_enter_mobile"
+            android:background="@color/white"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:layout_marginStart="@dimen/address_form_button_marginTop"
+            android:layout_marginTop="@dimen/address_form_button_marginTop"
+            android:layout_marginEnd="@dimen/address_form_button_marginTop"
+            android:layout_toEndOf="@+id/iv_phone"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="@dimen/address_form_button_marginTop"
+            >
+            <CheckBox
+                android:id="@+id/cb_remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_remember_me"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/rounded_corners_button_accent"
+                android:backgroundTint="@color/black"
+                android:text="@string/txt_cancel"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/rounded_corners_button_accent"
+                android:text="@string/str_ok"
+                android:textColor="@color/white"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

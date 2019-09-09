@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/bottomNavHome"
+            android:enabled="true"
+            android:icon="@drawable/ic_home"
+            android:title="@string/actionHome"
+            app:showAsAction="always"
+            />
+        <item
+
+            android:id="@+id/bottomNavFavourite"
+            android:enabled="true"
+            android:icon="@drawable/ic_favorite"
+            android:title="@string/actionFavourites"
+            app:showAsAction="ifRoom"
+
+            />
+        <item
+
+            android:id="@+id/bottomNavCelebrities"
+            android:enabled="true"
+            android:icon="@drawable/ic_star_circle"
+            android:title="@string/celebritiesall"
+            app:showAsAction="ifRoom"
+
+            />
+
+        <item
+            android:id="@+id/bottomNavCategory"
+            android:enabled="true"
+            android:icon="@drawable/ic_categories"
+            android:title="@string/actionCategoriesB"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/bottomNavCart"
+            android:enabled="true"
+            android:title="@string/actionCartTemp"
+            android:icon="@drawable/toggle_ic_cart"
+            android:actionLayout="@layout/layout_animated_ic_cart"
+            app:showAsAction="always"
+
+            />
+    </group>
+
+</menu>

@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "221499494005",
+    "firebase_url": "https://celebrities-cart.firebaseio.com",
+    "project_id": "celebrities-cart",
+    "storage_bucket": "celebrities-cart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221499494005:android:ae5f54ae289a57e3",
+        "android_client_info": {
+          "package_name": "com.celebritiescart.celebritiescart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221499494005-mctc8rqotfv0j3nni7oevv6k4b86dfjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYAyxGG8yJ-wZIUmhF8cP6iASc7z0sc3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221499494005-mctc8rqotfv0j3nni7oevv6k4b86dfjd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "221499494005-l0nrrke0dctl0ngafas6cb2mbjvu8fu3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.celebritiescart.www"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221499494005:android:20986771f8aeaec4",
+        "android_client_info": {
+          "package_name": "com.celebritiescart.celebritiescartt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221499494005-mctc8rqotfv0j3nni7oevv6k4b86dfjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYAyxGG8yJ-wZIUmhF8cP6iASc7z0sc3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221499494005-mctc8rqotfv0j3nni7oevv6k4b86dfjd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "221499494005-l0nrrke0dctl0ngafas6cb2mbjvu8fu3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.celebritiescart.www"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221499494005:android:c3135a369ea69a93",
+        "android_client_info": {
+          "package_name": "com.celebritiescart.www"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221499494005-mctc8rqotfv0j3nni7oevv6k4b86dfjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYAyxGG8yJ-wZIUmhF8cP6iASc7z0sc3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221499494005-mctc8rqotfv0j3nni7oevv6k4b86dfjd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "221499494005-l0nrrke0dctl0ngafas6cb2mbjvu8fu3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.celebritiescart.www"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
